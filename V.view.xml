@@ -1,0 +1,10 @@
+<mvc:View controllerName="sap.m.sample.InputAssisted.C"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<Label id="pwdLabel" labelFor="pwd" text="Password"/>
+		<Input id="pwd" type="Password" value="{user>/userData/pwd}" liveChange="onLiveChange" />
+	</l:VerticalLayout>
+</mvc:View>
